@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(27, 27, 27);
+}
+.container{
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    
+    & *{
+        margin: 0.7rem 0;
+    } 
+    
+    & h1{
+        background-color: chocolate;
+        border-radius: 10px;
+        color: blanchedalmond;
+    }
+    
+    & .description-game{
+        border-radius: 10px;
+        border: 3px solid blanchedalmond;
+        padding: 0.5rem;
+        color: blanchedalmond;
+    }
+
+    & select, button, input{
+        padding: 0.5rem;
+        border: 3px solid chocolate;
+        border-radius: 10px;
+    }
+
+    & h2{
+        background-color: rgb(133, 34, 34);
+        border-radius: 10px;
+        color: blanchedalmond;
+    }
+
+    #result{
+        color: blanchedalmond;
+    }
+
+}
+

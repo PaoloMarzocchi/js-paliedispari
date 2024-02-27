@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pari e dispari</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <p>Inserisci un numero da 1 a 5, questo numero verrà sommato con un numero segreto. Scommetti se la somma sarà pari o dispari</p>
-    <form>
-        <input type="number" min="1" max="5" placeholder="n°" required><br>
-        <select name="game" id="game">
-            <option value="pari">Pari</option>
-            <option value="dispari">Dispari</option>
-        </select>
-        <button type="submit">Gioca</button>
-    </form>
+    <div class="container">
+        <h1>SCOMMETTI SUL RISULTATO</h1>
+        <p class="description-game">Inserisci un numero da 1 a 5, questo numero verrà sommato con un numero segreto. Scommetti se la somma sarà
+            pari o dispari</p>
+        <form>
+            <input type="number" id="input-numb" min="1" max="5" placeholder="n°" required><br>
+            <select name="game" id="game">
+                <option value="pari">Pari</option>
+                <option value="dispari">Dispari</option>
+            </select>
+            <button type="submit">Gioca</button>
+        </form>
+
+        <h2></h2>
+        <p id="result"></p>
+    </div>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
