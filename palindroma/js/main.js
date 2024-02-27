@@ -2,11 +2,14 @@
 
 const inputWord = prompt('Inserisci una parola e ti dirò se è un palindromo');
 
+//  Creare una funzione per capire se la parola inserita è palindroma
 
-
+/**
+ * Controlla se una parola è palindroma e restituisce un alert con la risposta
+ * @param {string} word 
+ */ 
 function palindromeWordTest(word) {
     let check = false
-    //  Creare una funzione per capire se la parola inserita è palindroma
     const lastIndex = word.length - 1;
     let reverseWord = '';
     //console.log(word);
